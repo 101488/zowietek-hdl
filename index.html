@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handleiding ZowieTek 4k ptz | GLR & Filmpartners</title>
+    <link rel="stylesheet" href="css handleiding.css">
+</head>
+<body class="dark-mode">
+    <!-- EASTER EGG OVERLAY -->
+    <div id="easter-egg" class="easter-egg-overlay">
+        <h1>GEMAAKT DOOR<br>DARIS BEGANOVIC</h1>
+    </div>
+
+    <div class="bg-dots dot-pattern-1"></div>
+    <div class="bg-dots dot-pattern-2"></div>
+
+    <header>
+        <div class="theme-switch-wrapper">
+            <button id="theme-toggle" class="theme-btn">☀️ LIGHT MODE</button>
+        </div>
+
+        <div class="header-logos">
+            <img src="grl logo.png" alt="Grafisch Lyceum Rotterdam Logo" class="partner-logo">
+            <img src="filmparthners  logo.png" alt="Filmpartners Logo" class="partner-logo">
+        </div>
+        
+        <div class="hero-title">
+            <h1>ZOWIETEK <span class="groen-text">4K PTZ</span></h1>
+            <h2 class="sub-title">GEBRUIKERSHANDLEIDING <span class="groen-text">& INSTALLATIE</span></h2>
+        </div>
+    </header>
+    
+    <div class="layout-wrapper">
+        <aside class="sidebar tabs">
+            <div class="sidebar-header">PTZ CAMERA</div>
+            <button class="tab-link active" data-val="1" onclick="openTab(event, 'OverzichtCam')">
+                <span class="bg-number">1</span><span class="tab-text">OVERZICHT PTZ CAM</span>
+            </button>
+            <button class="tab-link" data-val="0" onclick="openTab(event, 'Aansluitingen')">
+                <span class="bg-number">0</span><span class="tab-text">AANSLUITINGEN</span>
+            </button>
+            
+            <div class="sidebar-header">PTZ CONTROLLER</div>
+            <button class="tab-link" data-val="1" onclick="openTab(event, 'OverzichtController')">
+                <span class="bg-number">1</span><span class="tab-text">OVERZICHT PTZ CONTROLLER</span>
+            </button>
+            
+            <div class="sidebar-header">ALGEMEEN</div>
+            <button class="tab-link" data-val="8" onclick="openTab(event, 'Interface')">
+                <span class="bg-number">8</span><span class="tab-text">WEB INTERFACE</span>
+            </button>
+            <button class="tab-link" data-val="4" onclick="openTab(event, 'Problemen')">
+                <span class="bg-number">4</span><span class="tab-text">PROBLEMEN OPLOSSEN</span>
+            </button>
+            <button class="tab-link" data-val="8" onclick="openTab(event, 'Specificaties')">
+                <span class="bg-number">8</span><span class="tab-text">SPECIFICATIES</span>
+            </button>
+            <button class="tab-link" data-val="0" onclick="openTab(event, 'Veiligheid')">
+                <span class="bg-number">0</span><span class="tab-text">VEILIGHEIDSRISICO'S</span>
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'ContactFormulier')">
+                <span class="tab-text">KLACHTEN & VRAGEN</span>
+            </button>
+            
+            <div class="support-box">
+                <h4>CONTACT</h4>
+                <p>Heb je een vraag over de installatie of de apparatuur? Neem direct contact met ons op.</p>
+                <div class="contact-btn">101488@GLR.NL <span>></span></div>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- TABBLAD: OVERZICHT PTZ CAMERA -->
+            <div id="OverzichtCam" class="tab-content" style="display: block;">
+                <h2>OVERZICHT PTZ CAM</h2>
+                
+                <div class="samenvatting-box">
+                    <h3>Korte Samenvatting</h3>
+                    <p>De ZowieTek 4K PTZ is een alles-in-één oplossing voor professionele video-opnames en livestreams. Dankzij de Ultra HD resolutie, veelzijdige aansluitingen (HDMI, SDI, USB, LAN) en geruisloze Pan-Tilt-Zoom motoren, levert deze camera in elke situatie broadcast-kwaliteit beeld.</p>
+                </div>
+
+                <div class="image-gallery">
+                    <img src="cam1.jfif" alt="ZowieTek 4K PTZ Vooraanzicht" class="cam-image">
+                    <img src="cam2.jfif" alt="ZowieTek 4K PTZ Schuin Aanzicht" class="cam-image">
+                </div>
+
+                <h3>1. UITGEBREIDE INLEIDING</h3>
+                <p>Welkom bij de handleiding van de ZowieTek 4K Ultra HD PTZ-camera. Deze camera is ontworpen om maximale flexibiliteit te bieden aan zowel studenten, beginners als ervaren AV-technici. De ingebouwde beeldsensor garandeert heldere kleuren en scherpe contrasten, zelfs in ruimtes met uitdagende lichtomstandigheden. De optische zoomlens haalt het onderwerp dichterbij zonder kwaliteitsverlies, ideaal voor GLR-projecten.</p>
+                
+                <h3>2. INHOUD VAN DE VERPAKKING</h3>
+                <ul>
+                    <li>1x ZowieTek 4K PTZ Camera Hoofdunit</li>
+                    <li>1x Infrarood (IR) Afstandsbediening (excl. AAA-batterijen)</li>
+                    <li>1x 12V 1.5A Voedingsadapter</li>
+                    <li>1x RS232 Seriële besturingskabel</li>
+                    <li>1x Plafond-montagebeugel inclusief schroevenset</li>
+                </ul>
+
+                <h3>3. BEELDSENSOR EN AUTOFOCUS</h3>
+                <p>De ZowieTek is uitgerust met een geavanceerde 1/2.8 inch Sony CMOS sensor, speciaal gekalibreerd voor 4K opnames. De camera maakt gebruik van een hybride autofocus-systeem. Zelfs wanneer je met hoge snelheid inzoomt, stelt de lens razendsnel scherp op het onderwerp, waardoor het beeld nooit wazig is tijdens live-uitzendingen.</p>
+
+                <h3>4. MONTAGE OPTIES</h3>
+                <p>De camera beschikt over een standaard 1/4"-20 statiefaansluiting aan de onderkant, waardoor deze probleemloos op elk regulier camerastatief uit de apparatuuruitleen kan worden geplaatst. Met de beugel kan de camera ook aan de muur of ondersteboven aan het plafond worden bevestigd.</p>
+            </div>
+
+            <!-- TABBLAD: AANSLUITINGEN -->
+            <div id="Aansluitingen" class="tab-content">
+                <h2>AANSLUITINGEN & FUNCTIES</h2>
+                <p>Aan de achterzijde van de basis bevinden zich alle benodigde aansluitingen. De camera past in vrijwel elke bestaande infrastructuur.</p>
+                
+                <img src="cam3.jfif" alt="ZowieTek 4K PTZ Achteraanzicht" class="cam-image large">
+                
+                <div class="poort-uitleg">
+                    <h3>HOE DE AANSLUITINGEN WERKEN:</h3>
+                    <ul>
+                        <li><span class="highlight">LAN (Netwerk/PoE):</span> Sluit hier een netwerkkabel aan. Ondersteunt PoE (Power over Ethernet), wat betekent dat stroom, besturing én video over één enkele kabel kunnen lopen mits je een PoE-switch hebt.</li>
+                        <li><span class="highlight">HDMI OUT:</span> Ideaal voor korte afstanden. Verbind direct met een monitor, beamer of videomixer voor ongecomprimeerd 4K beeld.</li>
+                        <li><span class="highlight">USB 3.0:</span> Maakt van de camera een veredelde webcam. Direct inpluggen in een PC of Mac zonder ingewikkelde drivers te installeren.</li>
+                        <li><span class="highlight">SDI (3G-SDI):</span> De industriestandaard voor lange afstanden op de set. Kan 1080p video tot wel 100 meter storingsvrij verzenden over coaxkabel.</li>
+                        <li><span class="highlight">RS232/RS485:</span> De seriële poort voor klassieke hardware-joysticks via het VISCA of Pelco-protocol.</li>
+                    </ul>
+                </div>
+
+                <div class="do-dont-container">
+                    <div class="wel-doen">
+                        <h3>✅ WAT DE CAMERA WEL KAN</h3>
+                        <ul>
+                            <li>Vloeiend inzoomen zonder kwaliteitsverlies.</li>
+                            <li>Beeld uitsturen via HDMI, USB en LAN tegelijk.</li>
+                            <li>Tot 255 posities opslaan (presets).</li>
+                        </ul>
+                    </div>
+                    <div class="niet-doen">
+                        <h3>❌ WAT DE CAMERA NIET KAN</h3>
+                        <ul>
+                            <li>Buiten in de regen staan (niet waterdicht).</li>
+                            <li>Zelf geluid opnemen (geen microfoon).</li>
+                            <li>Draadloos (WiFi) verbinden.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABBLAD: OVERZICHT PTZ CONTROLLER -->
+            <div id="OverzichtController" class="tab-content">
+                <h2>OVERZICHT PTZ CONTROLLER</h2>
+                
+                <div class="samenvatting-box">
+                    <h3>Korte Samenvatting</h3>
+                    <p>De ZowieTek PTZ-controller is het hardware-bedieningspaneel ontworpen om perfect samen te werken met de 4K camera. Met de fysieke joystick, diverse draaiknoppen en een ingebouwd LCD-scherm bedien je de camera's veel nauwkeuriger en sneller dan met een muis of afstandsbediening. Ideaal voor live-regie op het GLR.</p>
+                </div>
+
+                <div class="image-gallery">
+                    <img src="foto controller.webp" alt="ZowieTek Controller Vooraanzicht" class="cam-image">
+                    <img src="knopjes controller.webp" alt="ZowieTek Controller Knoppen" class="cam-image">
+                </div>
+
+                <h3>1. OVERZICHT VAN HET PANEEL</h3>
+                <p>Het bedieningspaneel biedt directe fysieke toegang tot de belangrijkste camerafuncties:</p>
+                <ul>
+                    <li><strong>Joystick & Zoom:</strong> Een grote joystick aan de rechterkant voor pan- en tiltbewegingen. Aan de linkerkant bevindt zich een schuifknop (rocker) voor het snel in- en uitzoomen.</li>
+                    <li><strong>Ingebouwd LCD Scherm:</strong> Centraal op het paneel zit een kleurenscherm dat direct de live videostream van de gekoppelde camera laat zien. Bovenin lees je de status af, zoals de actieve camera (CAM2) en het actieve protocol (Sony VISCA).</li>
+                    <li><strong>Fysieke Draaiknoppen (Knobs):</strong> Bovenin bevinden zich draaiknoppen voor het handmatig afstellen van de pan/tilt-snelheid (PT SPEED) en zoomsnelheid (ZOOM SPEED). Aan de linkerkant zitten knoppen om de iris en de focus (Near/Far) te regelen.</li>
+                    <li><strong>Sneltoetsen & Verlichting:</strong> Het paneel is voorzien van een numeriek toetsenbord en diverse paars en wit verlichte functietoetsen. Deze achtergrondverlichting is cruciaal voor bediening in verduisterde regieruimtes of tv-studio's.</li>
+                </ul>
+
+                <h3>2. DE CONTROLLER KOPPELEN</h3>
+                <div class="poort-uitleg">
+                    <p>Volg deze stappen om de controller met de camera te verbinden via het netwerk:</p>
+                    <ul>
+                        <li><span class="highlight">STAP 1:</span> Sluit zowel de camera als de controller met een netwerkkabel aan op dezelfde switch.</li>
+                        <li><span class="highlight">STAP 2:</span> Druk op 'SETUP' op het controller-paneel en ga naar Netwerk Apparaten Toevoegen.</li>
+                        <li><span class="highlight">STAP 3:</span> Voer het IP-adres van de camera in (bijv. 10.0.0.10) en selecteer het protocol 'Sony VISCA'.</li>
+                        <li><span class="highlight">STAP 4:</span> Wijs de camera toe aan een sneltoets (bijv. CAM 1).</li>
+                        <li><span class="highlight">STAP 5:</span> Druk op de knop 'CAM 1' om de bediening over te nemen. Het live-beeld verschijnt nu op het controller-schermpje.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TABBLAD: WEB INTERFACE -->
+            <div id="Interface" class="tab-content">
+                <h2>DE WEB INTERFACES</h2>
+                <p>Zowel de ZowieTek PTZ Camera en de Controller communiceren via het IP-netwerk (LAN) en hebben allebei een eigen interface die je via een browser (Chrome, Edge, Safari) kunt benaderen.</p>
+                
+                <div class="content-box">
+                    <h3>1. WEB INTERFACE: PTZ CAMERA</h3>
+                    <p>De camera heeft de meest uitgebreide interface. Hier regel je het beeld en de stream-instellingen.</p>
+                    
+                    <div class="warning-box">
+                        <strong>STANDAARD CAMERA LOGIN:</strong><br><br>
+                        IP-adres: <code>192.168.1.188</code><br>
+                        Gebruikersnaam: <code>admin</code> | Wachtwoord: <code>admin</code>
+                    </div>
+
+                    <ul>
+                        <li><strong>Live Kijken (Preview):</strong> Bekijk direct de videostream van de camera met minimale vertraging.</li>
+                        <li><strong>IP Streaming (H.264 / H.265):</strong> Stel in dat de camera direct videostreams (RTSP of RTMP) naar platformen zoals YouTube of OBS Studio stuurt.</li>
+                        <li><strong>Kleur en Beeld (ISP):</strong> Professionele aanpassingen zoals witbalans, iris, sluitertijd, helderheid en contrast afstellen.</li>
+                    </ul>
+                </div>
+
+                <div class="content-box">
+                    <h3>2. WEB INTERFACE: PTZ CONTROLLER</h3>
+                    <p>De controller stel je voornamelijk in via het eigen LCD-schermpje. Echter, voor diepgaande netwerkinstellingen of firmware updates kun je ook inloggen op de controller zelf.</p>
+                    
+                    <div class="warning-box">
+                        <strong>STANDAARD CONTROLLER LOGIN:</strong><br><br>
+                        IP-adres: <code>192.168.1.88</code> <em>(of DHCP indien aangesloten op schoolnetwerk)</em><br>
+                        Gebruikersnaam: <code>admin</code> | Wachtwoord: <code>admin</code>
+                    </div>
+
+                    <ul>
+                        <li><strong>Netwerk Configuratie:</strong> Pas het IP-adres, subnetmasker en de gateway van het paneel aan.</li>
+                        <li><strong>Firmware Upgrades:</strong> Upload de nieuwste ZowieTek firmware bestanden om nieuwe functies toe te voegen of bugs te verhelpen.</li>
+                        <li><strong>Systeem Backup:</strong> Exporteer je ingestelde camera-lijst zodat je deze niet opnieuw hoeft te typen na een reset.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TABBLAD: PROBLEMEN OPLOSSEN -->
+            <div id="Problemen" class="tab-content">
+                <h2>PROBLEMEN OPLOSSEN</h2>
+                <p>Check deze tabellen als de apparatuur niet werkt zoals het hoort voordat je de support mailt.</p>
+                
+                <div class="content-box">
+                    <h3>PROBLEEMOPLOSSING: PTZ CAMERA</h3>
+                    <div class="table-responsive">
+                        <table class="specs-table">
+                            <tr>
+                                <th>Probleem / Fout</th>
+                                <th>Oplossing</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Geen stroom (lampjes uit)</strong></td>
+                                <td>Voedingskabel zit los of de netwerk-switch levert niet genoeg PoE-wattage. Controleer de 12V adapter in het stopcontact.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Geen beeld via HDMI</strong></td>
+                                <td>Verkeerde resolutie ingesteld of defecte HDMI kabel. Verander via de web interface de output-resolutie naar 1080p 60fps.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Camera schokt bij het draaien</strong></td>
+                                <td>De interne motoren zijn overbelast of de camera staat niet waterpas. Herstart de camera om hem automatisch opnieuw te kalibreren.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kan niet inloggen op Web Interface</strong></td>
+                                <td>Je computer zit niet in dezelfde IP-range. Stel je netwerkkaart tijdelijk handmatig in op bijvoorbeeld <code>192.168.1.100</code>.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>PROBLEEMOPLOSSING: PTZ CONTROLLER</h3>
+                    <div class="table-responsive">
+                        <table class="specs-table">
+                            <tr>
+                                <th>Probleem / Fout</th>
+                                <th>Oplossing</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Controller bestuurt de camera niet</strong></td>
+                                <td>Verkeerd IP-adres of protocol geselecteerd. Check of de camera op 'Sony VISCA' staat en voer het juiste IP (bijv. 10.0.0.10) in op de controller.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Beeld op LCD-scherm hapert / stoort</strong></td>
+                                <td>De netwerkkabel is beschadigd of de netwerk-switch kan de videodata niet aan. Vervang de UTP-kabel door een snellere CAT6-kabel.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Knoppen lichten niet op</strong></td>
+                                <td>De firmware is vastgelopen of de voeding is onvoldoende. Haal de stroom er 10 seconden af en laat het apparaat opnieuw opstarten.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABBLAD: SPECIFICATIES -->
+            <div id="Specificaties" class="tab-content">
+                <h2>TECHNISCHE SPECIFICATIES</h2>
+                
+                <div class="content-box">
+                    <h3>HARDWARE SPECS: PTZ CAMERA</h3>
+                    <div class="table-responsive">
+                        <table class="specs-table">
+                            <tr>
+                                <th>Specificatie</th>
+                                <th>Detail</th>
+                            </tr>
+                            <tr>
+                                <td>Sensor</td>
+                                <td>1/2.8 inch Hoge Kwaliteit 4K CMOS Sensor</td>
+                            </tr>
+                            <tr>
+                                <td>Video Output Resoluties</td>
+                                <td>4K (3840x2160) @ 30fps / 1080p @ 60fps / 720p @ 60fps</td>
+                            </tr>
+                            <tr>
+                                <td>Fysieke Video Poorten</td>
+                                <td>HDMI, 3G-SDI, USB 3.0, LAN (IP Stream)</td>
+                            </tr>
+                            <tr>
+                                <td>Stroomvoorziening</td>
+                                <td>DC 12V 1.5A / PoE (Power over Ethernet 802.3af)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <h3>HARDWARE SPECS: PTZ CONTROLLER</h3>
+                    <div class="table-responsive">
+                        <table class="specs-table">
+                            <tr>
+                                <th>Specificatie</th>
+                                <th>Detail</th>
+                            </tr>
+                            <tr>
+                                <td>Bediening / Besturing</td>
+                                <td>4D Joystick (Pan, Tilt, Zoom, Focus) & LCD Preview Scherm</td>
+                            </tr>
+                            <tr>
+                                <td>Ondersteunde Protocollen</td>
+                                <td>VISCA over IP, Serial VISCA, Pelco P/D, ONVIF</td>
+                            </tr>
+                            <tr>
+                                <td>Communicatie Poorten</td>
+                                <td>LAN (RJ45), RS232, RS422, RS485</td>
+                            </tr>
+                            <tr>
+                                <td>Stroomvoorziening</td>
+                                <td>DC 12V / PoE (Power over Ethernet)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABBLAD: VEILIGHEIDSRISICO'S -->
+            <div id="Veiligheid" class="tab-content">
+                <h2>VEILIGHEIDSRISICO'S</h2>
+                <p>Neem de volgende veiligheidsmaatregelen in acht bij het installeren en bedienen van de ZowieTek apparatuur om letsel of schade te voorkomen.</p>
+                
+                <div class="content-box">
+                    <h3>BELANGRIJKE VEILIGHEIDSINSTRUCTIES</h3>
+                    <ul>
+                        <li><strong>Valgevaar & Montage:</strong> Zorg er bij plafond- of muurmontage altijd voor dat de ZowieTek camera extra is geborgd met een stalen veiligheidskabel (safety wire). Controleer of de draagconstructie het gewicht aankan.</li>
+                        <li><strong>Stroom & PoE:</strong> Gebruik uitsluitend de meegeleverde 12V adapter of een officieel gecertificeerde PoE-switch. Koppel de stroom los voordat je kabels aansluit.</li>
+                        <li><strong>Lens & Licht:</strong> Richt de cameralens nooit langdurig op extreem felle lichtbronnen zoals direct zonlicht of podiumlasers. Dit kan de CMOS-sensor permanent inbranden.</li>
+                        <li><strong>Bewegende Delen:</strong> Blokkeer de pan- en tiltmotoren nooit met je handen tijdens het draaien of tijdens de opstart-kalibratie. Dit kan de interne tandwielen onherstelbaar beschadigen.</li>
+                        <li><strong>Vocht & Hitte:</strong> De apparatuur is uitsluitend bedoeld voor binnengebruik. Plaats de camera of controller niet in de buurt van radiatoren of in vochtige omgevingen.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TABBLAD: CONTACT / VRAGEN -->
+            <div id="ContactFormulier" class="tab-content">
+                <h2>KLACHTEN & VRAGEN</h2>
+                <p>Heb je een vraag over de installatie of de uitleenapparatuur, of wil je een klacht doorgeven? Vul het onderstaande formulier in en het wordt direct naar <strong>101488@glr.nl</strong> gestuurd.</p>
+                
+                <form action="mailto:101488@glr.nl" method="post" enctype="text/plain" class="glr-form">
+                    <div class="form-group">
+                        <label for="naam">NAAM:</label>
+                        <input type="text" id="naam" name="Naam" placeholder="Jouw naam" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-MAILADRES:</label>
+                        <input type="email" id="email" name="Email" placeholder="Jouw e-mailadres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="onderwerp">ONDERWERP:</label>
+                        <select id="onderwerp" name="Onderwerp">
+                            <option value="Vraag">Ik heb een vraag</option>
+                            <option value="Probleem met apparatuur">Probleem met apparatuur</option>
+                            <option value="Klacht">Ik heb een klacht</option>
+                            <option value="Anders">Anders...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bericht">BERICHT:</label>
+                        <textarea id="bericht" name="Bericht" rows="8" placeholder="Typ hier je vraag of klacht uitgebreid uit..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">VERSTUREN <span>></span></button>
+                    <p class="form-note">Let op: Deze knop opent je standaard e-mailprogramma (zoals Outlook of Apple Mail) om het bericht te verzenden naar Daris.</p>
+                </form>
+            </div>
+        </main>
+    </div> <!-- Einde layout-wrapper -->
+
+    <footer class="dynamic-footer">
+        <p id="footer-date"></p>
+        <p class="footer-small">@ <span id="footer-year"></span> Daris Beganovic | Grafisch Lyceum Rotterdam & Filmpartners</p>
+    </footer>
+
+    <script>
+        let secretCode = "";
+
+        function openTab(evt, tabNaam) {
+            var i, tabcontent, tablinks;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabNaam).style.display = "block";
+            evt.currentTarget.className += " active";
+
+            let clickedVal = evt.currentTarget.getAttribute('data-val');
+            if(clickedVal) {
+                secretCode += clickedVal;
+                if(secretCode.length > 10) {
+                    secretCode = secretCode.substring(secretCode.length - 10);
+                }
+                if(secretCode.includes("101488")) {
+                    const egg = document.getElementById('easter-egg');
+                    egg.style.display = 'flex';
+                    setTimeout(() => {
+                        egg.style.display = 'none';
+                        secretCode = ""; 
+                    }, 5000);
+                }
+            }
+        }
+
+        const themeBtn = document.getElementById('theme-toggle');
+        themeBtn.innerHTML = '☀️ LIGHT MODE';
+        
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                themeBtn.innerHTML = '☀️ LIGHT MODE';
+            } else {
+                themeBtn.innerHTML = '🌙 DARK MODE';
+            }
+        });
+
+        const dateObj = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        let formattedDate = dateObj.toLocaleDateString('nl-NL', options);
+        formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+        
+        document.getElementById('footer-date').innerText = formattedDate;
+        document.getElementById('footer-year').innerText = dateObj.getFullYear();
+    </script>
+</body>
+</html>
